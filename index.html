@@ -9,7 +9,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | QR code component</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&family=Nova+Round&family=Outfit:wght@400;700&family=Poppins:wght@400;500;600&display=swap');
@@ -23,14 +24,14 @@
     .card {
       background-color: hsl(0, 0%, 100%);
       /* height: 30rem; */
-      width: 18%;
+      width: 200px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       border-radius: 15px;
-      padding: 1rem;
-      min-width: 15rem;
+      padding: 10px;
+      min-width: 11rem;
     }
 
     .container {
@@ -45,21 +46,24 @@
     .img {
       /* height: 250px; */
       border-radius: 15px;
-      width: 100%;
+      width: 180px;
     }
 
     .content {
       text-align: center;
-      font-size: 15px;
       font-family: 'Outfit', sans-serif;
     }
 
-    p {
+    .para {
+      font-size: 11.5px;
       color: hsl(220, 15%, 55%);
+      font-weight: 400;
+      /* font-weight: 700; */
     }
 
-    h2 {
+    .heading {
       color: hsl(218, 44%, 22%);
+      font-weight: 700;
     }
 
     .attribution {
@@ -79,8 +83,8 @@
     <div class="card">
       <img class="img" src="./images/image-qr-code.png" alt="">
       <div class="content">
-        <h2>Improve your front-end skills by building projects</h2>
-        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+        <p class="heading">Improve your front-end skills by building projects</p>
+        <p class="para">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
       </div>
     </div>
   </main>
