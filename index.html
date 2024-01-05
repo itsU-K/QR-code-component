@@ -14,10 +14,10 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&family=Nova+Round&family=Outfit:wght@400;700&family=Poppins:wght@400;500;600&display=swap');
 
-    html,
-    body {
-      height: 100%;
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     .card {
@@ -75,10 +75,10 @@
 
 <body>
 
-  <main class="container">
-    <div class="card">
+  <main class="container" role="main-container">
+    <div class="card" role="card">
       <img class="img" src="./images/image-qr-code.png" alt="">
-      <div class="content">
+      <div class="content" role="card-content">
         <h2>Improve your front-end skills by building projects</h2>
         <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
       </div>
